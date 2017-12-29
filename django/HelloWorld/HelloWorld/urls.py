@@ -22,8 +22,13 @@ Including another URLconf
 
 from django.conf.urls import url
 from . import view
+from . import testdb
 
 urlpatterns = [
     url(r'^$', view.hello),
     url(r'^hello$', view.hello),
+    url(r'^testdb$', testdb.test),
+    url(r'^testdb/getdata$', testdb.getdata),
+    url(r'^testdb/edit$', testdb.edit),
+    url(r'^testdb/remove$', testdb.remove),
 ]
