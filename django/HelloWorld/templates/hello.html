@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% extends "base.html" %}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+   {% block mainBody %}
+    <p>继承了 base.html 文件</p>
+    {{hello}}
+   {% endblock  %}
+ <p>母版页不会显示</p>
+</body>
+</html>
