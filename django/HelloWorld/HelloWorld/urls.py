@@ -33,5 +33,6 @@ urlpatterns = [
     url(r'^testdb/edit$', testdb.edit),
     url(r'^testdb/remove$', testdb.remove),
     url(r'^search-form$', search.search_form),
-    url(r'^search$', search.search),
+    url(r'^search$', search.searchGet),
+    url(r'^searchPost$', search.searchPost),
 ]
