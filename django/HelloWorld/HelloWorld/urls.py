@@ -23,6 +23,7 @@ Including another URLconf
 from django.conf.urls import url
 from . import view
 from . import testdb
+from . import search
 
 urlpatterns = [
     url(r'^$', view.hello),
@@ -31,4 +32,6 @@ urlpatterns = [
     url(r'^testdb/getdata$', testdb.getdata),
     url(r'^testdb/edit$', testdb.edit),
     url(r'^testdb/remove$', testdb.remove),
+    url(r'^search-form$', search.search_form),
+    url(r'^search$', search.search),
 ]
