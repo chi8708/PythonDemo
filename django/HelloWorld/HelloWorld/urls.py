@@ -24,9 +24,10 @@ from django.conf.urls import url
 from . import view
 from . import testdb
 from . import search
-
+from django.contrib import admin
 urlpatterns = [
     url(r'^$', view.hello),
+    url(r'^admin/', admin.site.urls),
     url(r'^hello$', view.hello),
     url(r'^testdb$', testdb.test),
     url(r'^testdb/getdata$', testdb.getdata),
